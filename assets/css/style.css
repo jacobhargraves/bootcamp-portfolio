@@ -1,0 +1,31 @@
+:root {
+    --dark: rgb(0, 0, 0);
+    --dark_text: rgb(228, 228, 228);
+}
+
+* {
+    color: var(--dark_text);
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--dark);
+    padding: 1rem;
+}
+
+a{
+    background-color: rgb(0, 0, 0);
+    text-decoration:none;
+    padding: 0px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #fff;
+    border-radius:10px;
+    display: inline-block;
+}
+
+a:hover{
+        -webkit-box-shadow: 0px 0px 50px 0px rgb(31, 249, 235);
+        -moz-box-shadow: 0px 0px 50px 0px rgb(31, 249, 235);
+        box-shadow: 0px 0px 50px 0px rgb(31, 249, 235);
+}
