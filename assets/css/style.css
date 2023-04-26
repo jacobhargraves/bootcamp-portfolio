@@ -59,10 +59,6 @@ nav {
     margin: 10px;
 }
 
-nav > ul > li:hover {
-    text-shadow: 0px 0px 10px  var(--blue);
-}
-
 /* about */
 .about_left {
     display: flex;
@@ -82,6 +78,7 @@ nav > ul > li:hover {
     display: flex;
     flex-direction: row;
     width: 100vw;
+    height: 100vh;
 }
 
 .about_right {
@@ -108,11 +105,17 @@ nav > ul > li:hover {
 }
 
 /* work */
+.work_container {
+    width: 100vw;
+    height: 100vh;
+}
 
 .work_title {
     text-align: center;
 }
 
+/* place projects in a grid with project 1 being largest 
+   and added hover features*/
 .work_projects {
     display: grid;
     gap: 1.5rem;
@@ -125,49 +128,162 @@ nav > ul > li:hover {
 .project_1 {
     grid-column: span 3;
     display: flex;
-    color: black;
-    background: url('/assets/images/code_pic_1.jpeg') no-repeat top center;
-    background-position: top;
+    background: url('/assets/images/project_3_img.png') no-repeat top center;
+    background-position: center;
     background-size: cover;
     border-radius: 15px;
     justify-content: center;
     font-size: 30px;
+    transition: all 0.7s ease-in-out;
+}
+
+.project_1:hover {
+    transform: scale(1.1);
+}
+
+#item_1 {
+    color: var(--dark_text_white);
+    background-color: var(--dark);
+    height: fit-content;
+    margin: 1rem;
+    border-radius: 15px;
+    padding: .5rem;
+    font-weight: 300;
 }
 
 .project_2 {
     grid-column: span 1;
     display: flex;
-    color: black;
-    background: url('/assets/images/code_pic_2.jpg') no-repeat top center;
+    background: url('/assets/images/project_2_img.png') no-repeat top center;
     background-position: top;
     background-size: cover;
     border-radius: 15px;
     justify-content: center;
-    font-size: 30px;
+    font-size: 20px;
+    transition: all 0.7s ease-in-out;
+}
+
+.project_2:hover {
+    transform: scale(1.1);
+}
+
+#item_2 {
+    color: var(--dark_text_white);
+    background-color: var(--dark);
+    height: fit-content;
+    margin: 1rem;
+    border-radius: 15px;
+    padding: .5rem;
+    font-weight: 300;
 }
 
 .project_3 {
     grid-column: span 1;
     display: flex;
     color: black;
-    background: url('/assets/images/code_pic_2.jpg') no-repeat top center;
-    background-position: top;
+    background: url('/assets/images/project_1_img.png') no-repeat top center;
+    background-position: center;
     background-size: cover;
     border-radius: 15px;
     justify-content: center;
-    font-size: 30px;
+    font-size: 20px;
+    transition: all 0.7s ease-in-out;
+}
+
+.project_3:hover {
+    transform: scale(1.1);
+}
+
+#item_3 {
+    color: var(--dark_text_white);
+    background-color: var(--dark);
+    height: fit-content;
+    margin: 0.5rem;
+    border-radius: 15px;
+    padding: .4rem;
+    font-weight: 300;
 }
 
 .project_4 {
     grid-column: span 1;
     display: flex;
     color: black;
-    background: url('/assets/images/code_pic_2.jpg') no-repeat top center;
+    background: url('/assets/images/project_4_img.png') no-repeat top center;
     background-position: top;
     background-size: cover;
     border-radius: 15px;
     justify-content: center;
-    font-size: 30px;
+    font-size: 20px;
+    transition: all 0.7s ease-in-out;
+}
+
+.project_4:hover {
+    transform: scale(1.1);
+}
+
+#item_4 {
+    color: var(--dark_text_white);
+    background-color: var(--dark);
+    height: fit-content;
+    margin: 1rem;
+    border-radius: 15px;
+    padding: .5rem;
+    font-weight: 300;
+}
+
+/* contact page */
+.contact_me_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.contact_form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;    
+}
+
+.form_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#name {
+    display: flex;
+    width: fit-content;
+    color: var(--dark);
+}
+
+#email {
+    display: flex;
+    width: fit-content;
+    color: var(--dark);
+}
+
+#message {
+    display: flex;
+    width: 50vw;
+    height: 20vh;
+    color: var(--dark);
+}
+
+.form_container button {
+    display: block;
+    width: fit-content;
+    color: var(--dark);
+}
+
+/* footer */
+footer p {
+    text-align: center;
 }
 
 /* media queries */
