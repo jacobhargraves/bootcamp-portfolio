@@ -123,7 +123,7 @@ nav > ul > li {
 .project_1 {
     grid-column: span 3;
     display: flex;
-    background: url('/assets/images/project_3_img.png') no-repeat top center;
+    background: url('../images/project_3_img.png') no-repeat top center;
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -149,7 +149,7 @@ nav > ul > li {
 .project_2 {
     grid-column: span 1;
     display: flex;
-    background: url('/assets/images/project_2_img.png') no-repeat top center;
+    background: url('../images/project_2_img.png') no-repeat top center;
     background-position: top;
     background-size: cover;
     border-radius: 15px;
@@ -176,7 +176,7 @@ nav > ul > li {
     grid-column: span 1;
     display: flex;
     color: black;
-    background: url('/assets/images/project_1_img.png') no-repeat top center;
+    background: url('../images/project_1_img.png') no-repeat top center;
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -203,7 +203,7 @@ nav > ul > li {
     grid-column: span 1;
     display: flex;
     color: black;
-    background: url('/assets/images/project_4_img.png') no-repeat top center;
+    background: url('../images/project_4_img.png') no-repeat top center;
     background-position: top;
     background-size: cover;
     border-radius: 15px;
